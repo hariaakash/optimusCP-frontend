@@ -225,7 +225,7 @@ angular.module("optimusApp", ['angular-loading-bar', 'ui.router', 'oc.lazyLoad']
 angular.module('optimusApp')
     .controller('globalCtrl', function($scope, $rootScope, $location, $http, $state, $ocLazyLoad) {
         // $rootScope.apiUrl = 'http://localhost:3000/webapi/';
-        $rootScope.apiUrl = 'https://optimuscp.io/webapi/';
+        $rootScope.apiUrl = 'https://webapi.optimuscp.io/';
         $ocLazyLoad.load(['./plugins/sweetalert2/sweetalert2.min.js', './plugins/sweetalert2/sweetalert2.min.css', './plugins/toast/toast.min.js', './plugins/toast/toast.min.css'])
         $rootScope.homeData = {};
         $rootScope.checkAuth = function(force) {
